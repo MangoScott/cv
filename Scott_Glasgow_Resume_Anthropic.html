@@ -293,11 +293,42 @@
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
+
+            .download-btn {
+                display: none !important;
+            }
+        }
+
+        /* Download Button */
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(232, 108, 48, 0.3);
+            transition: all 0.2s ease;
+            font-family: 'Inter', sans-serif;
+            z-index: 1000;
+        }
+
+        .download-btn:hover {
+            background: #d45a20;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(232, 108, 48, 0.4);
         }
     </style>
 </head>
 
 <body>
+    <button class="download-btn" onclick="window.print()">📄 Download PDF</button>
+
     <header class="header">
         <div class="header-left">
             <h1>Scott Glasgow</h1>
