@@ -10,7 +10,6 @@
 
         :root {
             --accent: #E86C30;
-            /* Mango orange */
             --accent-light: #FFF4EE;
             --dark: #1a1a1a;
             --gray-700: #374151;
@@ -26,12 +25,12 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 10pt;
-            line-height: 1.45;
+            font-size: 9pt;
+            line-height: 1.35;
             color: var(--dark);
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 0.4in 0.5in;
+            padding: 0.35in 0.45in;
             background: white;
         }
 
@@ -40,30 +39,30 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 16px;
-            padding-bottom: 14px;
-            border-bottom: 3px solid var(--accent);
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2.5px solid var(--accent);
         }
 
         .header-left h1 {
-            font-size: 26pt;
+            font-size: 22pt;
             font-weight: 700;
             color: var(--dark);
-            margin-bottom: 2px;
+            margin-bottom: 1px;
             letter-spacing: -0.5px;
         }
 
         .tagline {
-            font-size: 11pt;
+            font-size: 10pt;
             color: var(--accent);
             font-weight: 500;
         }
 
         .header-right {
             text-align: right;
-            font-size: 9pt;
+            font-size: 8.5pt;
             color: var(--gray-700);
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .header-right a {
@@ -71,22 +70,18 @@
             text-decoration: none;
         }
 
-        .header-right a:hover {
-            color: var(--accent);
-        }
-
         /* Section Headers */
         h2 {
-            font-size: 10pt;
+            font-size: 9pt;
             font-weight: 700;
             color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-top: 14px;
-            margin-bottom: 8px;
+            letter-spacing: 1.2px;
+            margin-top: 10px;
+            margin-bottom: 5px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         h2::after {
@@ -99,43 +94,37 @@
         /* Motivation Box */
         .motivation-box {
             background: linear-gradient(135deg, var(--accent-light) 0%, #fff 100%);
-            border-left: 3px solid var(--accent);
-            padding: 10px 14px;
-            font-size: 9.5pt;
-            line-height: 1.55;
+            border-left: 2.5px solid var(--accent);
+            padding: 7px 10px;
+            font-size: 8.5pt;
+            line-height: 1.45;
             color: var(--gray-700);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 85px 1fr;
-            gap: 3px 12px;
-            font-size: 9.5pt;
+        /* Skills - Compact inline */
+        .skills-inline {
+            font-size: 8.5pt;
+            color: var(--gray-700);
+            line-height: 1.5;
         }
 
-        .skill-label {
-            font-weight: 600;
+        .skills-inline strong {
             color: var(--dark);
-        }
-
-        .skill-value {
-            color: var(--gray-700);
         }
 
         /* Product Card */
         .product-card {
             background: var(--accent-light);
-            padding: 10px 12px;
-            border-radius: 6px;
-            margin-bottom: 8px;
+            padding: 7px 10px;
+            border-radius: 4px;
+            margin-bottom: 4px;
         }
 
         .product-title {
             font-weight: 700;
             color: var(--dark);
-            font-size: 10pt;
+            font-size: 9pt;
         }
 
         .product-title a {
@@ -144,45 +133,44 @@
         }
 
         .product-role {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-500);
             font-style: italic;
-            margin-bottom: 4px;
         }
 
         .product-desc {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-700);
-            line-height: 1.5;
+            line-height: 1.4;
+            margin-top: 2px;
         }
 
         /* Papers */
         .paper {
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
 
         .paper-title {
             font-weight: 600;
             color: var(--dark);
-            font-size: 9.5pt;
+            font-size: 8.5pt;
         }
 
         .paper-venue {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--accent);
             font-style: italic;
         }
 
         .paper-desc {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-500);
-            margin-top: 1px;
         }
 
         .working-papers {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-700);
-            line-height: 1.6;
+            line-height: 1.45;
         }
 
         .working-papers strong {
@@ -191,7 +179,7 @@
 
         /* Jobs */
         .job {
-            margin-bottom: 10px;
+            margin-bottom: 7px;
         }
 
         .job-header {
@@ -202,31 +190,32 @@
 
         .job-title {
             font-weight: 700;
-            font-size: 10pt;
+            font-size: 9pt;
             color: var(--dark);
         }
 
         .job-date {
-            font-size: 8.5pt;
+            font-size: 8pt;
             color: var(--gray-500);
             font-weight: 500;
         }
 
         .job-company {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-500);
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         ul {
-            padding-left: 14px;
+            padding-left: 12px;
             margin: 0;
         }
 
         li {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-700);
-            margin-bottom: 1px;
+            margin-bottom: 0;
+            line-height: 1.4;
         }
 
         li::marker {
@@ -237,58 +226,42 @@
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            gap: 8px;
         }
 
         /* Education */
         .edu-item {
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
         .edu-school {
             font-weight: 600;
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             color: var(--dark);
         }
 
         .edu-detail {
-            font-size: 9pt;
+            font-size: 8pt;
             color: var(--gray-500);
         }
 
         /* Achievements */
-        .achievements-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4px 20px;
-            font-size: 9pt;
-        }
-
-        .achievement {
-            display: flex;
-            align-items: baseline;
-            gap: 6px;
-        }
-
-        .achievement-icon {
-            color: var(--accent);
-            font-size: 10pt;
-        }
-
-        .achievement-text {
+        .achievements-inline {
+            font-size: 8pt;
             color: var(--gray-700);
+        }
+
+        .achievements-inline .dot {
+            color: var(--accent);
+            font-weight: bold;
         }
 
         @media print {
             body {
-                padding: 0;
+                padding: 0.3in 0.4in;
             }
 
-            .motivation-box {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-
+            .motivation-box,
             .product-card {
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
@@ -302,15 +275,15 @@
         /* Download Button */
         .download-btn {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 16px;
+            right: 16px;
             background: var(--accent);
             color: white;
             border: none;
-            padding: 12px 20px;
-            font-size: 14px;
+            padding: 10px 16px;
+            font-size: 13px;
             font-weight: 600;
-            border-radius: 8px;
+            border-radius: 6px;
             cursor: pointer;
             box-shadow: 0 4px 12px rgba(232, 108, 48, 0.3);
             transition: all 0.2s ease;
@@ -320,8 +293,7 @@
 
         .download-btn:hover {
             background: #d45a20;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(232, 108, 48, 0.4);
+            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -337,47 +309,36 @@
         <div class="header-right">
             <a href="mailto:scott@finmango.org">scott@finmango.org</a><br>
             <a href="https://linkedin.com/in/sglasgow">linkedin.com/in/sglasgow</a><br>
-            <a href="https://github.com/MangoScott">github.com/MangoScott</a><br>
-            <a href="https://sglasgow.com">sglasgow.com</a>
+            <a href="https://github.com/MangoScott">github.com/MangoScott</a>
         </div>
     </header>
 
     <h2>AI Safety Motivation</h2>
     <div class="motivation-box">
-        I've spent a decade building technology to improve financial health for millions—and witnessed firsthand how
-        systems can either empower or harm vulnerable populations. My work with Google Health on COVID-19 open data,
-        reaching 190+ countries, showed me both the transformative power of well-deployed technology and the critical
-        importance of getting it right. I'm drawn to Anthropic's mission because I believe the same rigor I've applied
-        to financial wellbeing research must be applied to ensuring advanced AI systems remain beneficial,
-        interpretable, and aligned with human values.
+        I've spent a decade building technology to improve financial health for millions—and witnessed how systems can
+        either empower or harm vulnerable populations. My work with Google Health on COVID-19 open data (190+ countries)
+        showed me the transformative power of technology and the critical importance of getting it right. I'm drawn to
+        Anthropic's mission because the same rigor I've applied to financial wellbeing research must be applied to
+        ensuring AI systems remain beneficial, interpretable, and aligned with human values.
     </div>
 
     <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <span class="skill-label">Languages</span>
-        <span class="skill-value">Python (fluent), JavaScript, SQL, R</span>
-        <span class="skill-label">AI/ML</span>
-        <span class="skill-value">LLM APIs (Claude, GPT), prompt engineering, AI-assisted development, data pipeline
-            automation</span>
-        <span class="skill-label">Data Science</span>
-        <span class="skill-value">Google Health Trends API, statistical analysis, probabilistic modeling, data
-            visualization</span>
-        <span class="skill-label">Tools</span>
-        <span class="skill-value">Git/GitHub (34 public repos), deep learning experimentation, web scraping, API
-            development</span>
-    </div>
+    <p class="skills-inline">
+        <strong>Languages:</strong> Python (fluent), JavaScript, SQL, R ·
+        <strong>AI/ML:</strong> LLM APIs (Claude, GPT), prompt engineering, AI-assisted dev ·
+        <strong>Data:</strong> Google Health Trends API, statistical analysis, probabilistic modeling ·
+        <strong>Tools:</strong> Git/GitHub (34 repos), web scraping, API development
+    </p>
 
     <h2>Technical Products</h2>
     <div class="product-card">
         <p class="product-title">Financial Health Barometer — <a
-                href="https://finmango.org/barometer">finmango.org/barometer</a></p>
-        <p class="product-role">Lead Developer & Architect</p>
+                href="https://finmango.org/barometer">finmango.org/barometer</a> <span class="product-role">| Lead
+                Developer</span></p>
         <p class="product-desc">
-            Built real-time economic stress visualization tracking financial anxiety, food insecurity, and housing
-            stress across all 50 US states.
-            Developed Heuristic Stress Model (HSM) combining Google Health Trends API, Census ACS, HUD Fair Market
-            Rents, and FRED data into a unified 0-250 stress index.
-            Used by researchers; includes whitepaper, methodology docs, and CSV export for econometric modeling.
+            Real-time economic stress visualization across 50 US states. Built Heuristic Stress Model combining Google
+            Health Trends API, Census ACS, HUD Fair Market Rents, and FRED into unified stress index. Used by
+            researchers; includes whitepaper and CSV export.
         </p>
     </div>
 
@@ -391,15 +352,15 @@
     <div class="paper">
         <p class="paper-title">COVID-19 Open-Data: A global-scale spatially granular meta-dataset</p>
         <p class="paper-venue">Nature Scientific Data (2022) — Wahltinez et al. (data contributor)</p>
-        <p class="paper-desc">Contributed data to meta-dataset covering 22,579 locations across 190+ countries. Used by
-            WHO, World Bank, IMF, Harvard.</p>
+        <p class="paper-desc">Contributed data to 22,579-location dataset across 190+ countries. Used by WHO, World
+            Bank, IMF, Harvard.</p>
     </div>
-    <p class="working-papers" style="margin-top: 6px;">
+    <p class="working-papers">
         <strong>Working Papers:</strong>
         AI Adoption in Banking (w/ Eren Cifi, PhD) ·
         Mental Health Searches & Eviction Trends (w/ Eren Cifi, PhD) ·
-        Sustainable Investment Search Behavior (w/ M. Venkatesan, PhD, Northeastern) ·
-        Financial Literacy Search Patterns (w/ J. Longo, PhD, Rutgers)
+        Sustainable Investment Search Behavior (w/ M. Venkatesan, PhD) ·
+        Financial Literacy Search Patterns (w/ J. Longo, PhD)
     </p>
 
     <h2>Experience</h2>
@@ -410,10 +371,9 @@
         </div>
         <p class="job-company">San Francisco, CA</p>
         <ul>
-            <li>Built data pipelines using Google Health Trends API with unique conditional probability access (not
-                standard RSV)</li>
-            <li>Maintain 34+ public repositories; entire research operation on GitHub for transparency and
-                reproducibility</li>
+            <li>Built data pipelines using Google Health Trends API with conditional probability access (not standard
+                RSV)</li>
+            <li>Maintain 34+ public repositories; research operation on GitHub for transparency and reproducibility</li>
             <li>Extensively use LLM APIs for research automation, content development, and rapid prototyping</li>
             <li>Systems used by WHO, World Bank, IMF, Harvard; projects reaching 1M+ people in 100+ countries</li>
             <li>Research collaborations with PhDs at Stanford, Arizona State, Northeastern, Rutgers, Iowa State, UVA
@@ -428,8 +388,8 @@
         </div>
         <p class="job-company">Cincinnati, OH</p>
         <ul>
-            <li>Selected among top 4 startups (from 400+ applicants) for $100K gener8tor accelerator investment</li>
-            <li>Rapid iteration from concept to beta using AI-assisted development; full-stack technical leadership</li>
+            <li>Selected among top 4 startups (400+ applicants) for $100K gener8tor accelerator investment</li>
+            <li>Rapid concept-to-beta iteration using AI-assisted development; full-stack technical leadership</li>
         </ul>
     </div>
 
@@ -465,24 +425,12 @@
     </div>
 
     <h2>Achievements</h2>
-    <div class="achievements-grid">
-        <div class="achievement">
-            <span class="achievement-icon">●</span>
-            <span class="achievement-text">Google Health Partnership — COVID-19 Open Data</span>
-        </div>
-        <div class="achievement">
-            <span class="achievement-icon">●</span>
-            <span class="achievement-text">TEDx Speaker — Togo (2020), Brazil (2019)</span>
-        </div>
-        <div class="achievement">
-            <span class="achievement-icon">●</span>
-            <span class="achievement-text">gener8tor Accelerator — $100K investment</span>
-        </div>
-        <div class="achievement">
-            <span class="achievement-icon">●</span>
-            <span class="achievement-text">34 Public GitHub Repositories</span>
-        </div>
-    </div>
+    <p class="achievements-inline">
+        <span class="dot">●</span> Google Health Partnership (COVID-19 Open Data) ·
+        <span class="dot">●</span> TEDx Speaker — Togo (2020), Brazil (2019) ·
+        <span class="dot">●</span> gener8tor Accelerator ($100K) ·
+        <span class="dot">●</span> 34 Public GitHub Repos
+    </p>
 </body>
 
 </html>
